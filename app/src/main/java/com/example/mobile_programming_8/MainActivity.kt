@@ -23,6 +23,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         retrieveCountries()
+
+        binding.btnAdd.setOnClickListener {
+            startActivity(Intent(this@MainActivity, AddActivity::class.java))
+        }
     }
 
     private fun countryItemClicked(country: CountryItem) {

@@ -5,9 +5,9 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class CountryDetail(
-    val countryId : Int?,
-    val countryName : String?,
-    val countryArea : String?,
-    val countryPopulation : Int?,
-    val countryDescription : String
+    var countryId : Int?,
+    var countryName : String?,
+    var countryArea : String?,
+    var countryPopulation : Int?,
+    var countryDescription : String
 ) : Parcelable
